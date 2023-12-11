@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document12</title>
+    <style>
+        /* .about{
+            display: none;
+        }
+        .backg{
+            display: none;
+        } */
+    </style>
+</head>
+<body>
+    <div>
+        <span onclick="changeToAbout();">關於我</span>
+        <span onclick="changeToExps();">學經歷</span>
+    </div>
+    <hr>
+    <div id="about">大家好我是澎澎</div>
+    <div id="exps" style="display:none">我是社工系畢業</div>
+    <!-- <div>
+        <span onclick="change1();">關於我</span>
+        <span onclick="change2();">學經歷</span>
+    </div>
+    <hr>
+    <div id="about">大家好我是澎澎</div>
+    <div id="backg">我是社工系畢業</div> -->
+    <script>
+        function changeToAbout(){
+            let aboutDiv=document.querySelector("#about");
+            let expsDiv=document.querySelector("#exps");
+            expsDiv.style.display="none";
+            aboutDiv.style.display="block";
+        }
+        function changeToExps(){
+            let aboutDiv=document.querySelector("#about");
+            let expsDiv=document.querySelector("#exps");
+            aboutDiv.style.display="none";
+            expsDiv.style.display="block";
+        }
+        // function change1(){
+        //     let elm=document.querySelector("#backg");
+        //     elm.className="about";
+        // }
+        // function change2(){
+        //     let elm=document.querySelector("#about");
+        //     elm.className="backg";
+        // }
+
+    </script>
+</body>
+</html>
